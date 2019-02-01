@@ -2,6 +2,14 @@ function takeANumber(currentLine,newName) {
   currentLine.push(newName)
   return `Welcome, ${newName}. You are number ${currentLine.length} in line.`
 }
+var i=0
+function takeANumber2(currentLine){
+  i++
+  currentLine.push(i)
+  return `You're number ${i}`
+}
+
+
 function nowServing(currentLine){
  if (currentLine.length === 0){
    return "There is nobody waiting to be served!"
